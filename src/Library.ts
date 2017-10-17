@@ -1,11 +1,12 @@
 class Library {
 
     items:Array<Item>;
+    static allMovies: Array<Item> = [];
     static movies: Array<Item> = [];
+    static allBooks: Array<Item> = [];
     static books: Array<Item> = [];
 
     constructor(public books: Array<Book>,public movies:Array<Movie>){
-
     }
 
     static fromJSON(data: any) : Library {
@@ -20,7 +21,8 @@ class Library {
     }
 
     static addMovie(): void {
-        let newMovie = new Movie("test", "test", "test", 15, "test");
+        let r: number = Math.floor(Math.random() * Library.allMovies.length) + 1;
+        let newMovie = new Movie("test", "test", "test", 10, "PG10");
         this.movies = (<Item[]>this.movies).concat(newMovie);
 
         let itemContainer: HTMLElement = document.getElementById("items");
@@ -28,7 +30,9 @@ class Library {
     }
 
     static addBook(): void {
-        let newBook = new Book("test", new Author("test"), "test", "test");
+         // console.log(Library.allBooks);
+        let r: number = Math.floor(Math.random() * Library.allBooks.length) + 1;
+        let newBook = new Book("test", new Author("test"), "test", "test")
         this.books = (<Item[]>this.books).concat(newBook);
 
         let itemContainer: HTMLElement = document.getElementById("items");

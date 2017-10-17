@@ -13,18 +13,23 @@ var Library = (function () {
         return this.items;
     };
     Library.addMovie = function () {
-        var newMovie = new Movie("test", "test", "test", 15, "test");
+        var r = Math.floor(Math.random() * Library.allMovies.length) + 1;
+        var newMovie = new Movie("test", "test", "test", 10, "PG10");
         this.movies = this.movies.concat(newMovie);
         var itemContainer = document.getElementById("items");
         this.movies.forEach(function (item) { return item.render(itemContainer); });
     };
     Library.addBook = function () {
+        // console.log(Library.allBooks);
+        var r = Math.floor(Math.random() * Library.allBooks.length) + 1;
         var newBook = new Book("test", new Author("test"), "test", "test");
         this.books = this.books.concat(newBook);
         var itemContainer = document.getElementById("items");
         this.books.forEach(function (item) { return item.render(itemContainer); });
     };
+    Library.allMovies = [];
     Library.movies = [];
+    Library.allBooks = [];
     Library.books = [];
     return Library;
 }());
