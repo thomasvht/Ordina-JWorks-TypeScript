@@ -6,15 +6,28 @@
       "description": "Srsly comedy?",
       "age": 16,
       "name":"PG"
+    },
+    {
+      "title": "Spiderman",
+      "genre": "Action",
+      "description": "A kid bitten by a spider and getting super powers from his bite.",
+      "age": 10,
+      "name": "PG"
     }
   ],
 
   "books": [
     {
       "title": "Moby Dick",
-      "author": "John Doe",
+      "author": "Herman Melville",
       "genre": "Horror",
       "description": "You found another fish didn't ya!"
+    },
+    {
+      "title": "Origin",
+      "author": "Dan Brown",
+      "genre": "Fiction",
+      "description": "Yet another book with a lot of mysteries."
     }
   ]
 }
