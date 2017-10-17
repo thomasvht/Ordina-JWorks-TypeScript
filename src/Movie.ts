@@ -1,38 +1,25 @@
+interface Rating{
+    age:number;
+    name:string;
+}
 class Movie extends Item implements Rating{
-    render(element: HTMLElement): void {
-        element.innerHTML = `
-        <article>
-        <span>${this.title}</span>
-        <span>${this.genre}</span>
-        <span>${this.description}</span>
-        <span>${this.name}</span>
-        <span>${this.age}</span>
-        </article>
-`;
+
+    age:number;
+    name:string;
+
+    constructor(title:string,genre:string,description:string,age:number,name:string){
+        super(title,genre,description);
+        this.age = age;
+        this.name = name;
     }
 
-    private _age: number;
-    private _name: string;
+    render(element: HTMLElement):void {
+        let article: HTMLElement = document.createElement("article");
+        article.innerHTML =
+            "<h3>" + this.title + "</h3>" +
+            "<p>" + this.genre + " "+ this.name +" "+this.age+ "</p>" +
+            "<span>" + this.description + "</span>";
 
-
-    constructor() {
-        super();
-    }
-
-
-    get age(): number {
-        return this._age;
-    }
-
-    set age(value: number) {
-        this._age = value;
-    }
-
-    get name(): string {
-        return this._name;
-    }
-
-    set name(value: string) {
-        this._name = value;
+        element.appendChild(article);
     }
 }
