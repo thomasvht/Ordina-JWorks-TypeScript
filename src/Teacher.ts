@@ -1,9 +1,6 @@
-class Teacher {
-    firstname: string;
-    lastname: string;
+class Teacher extends Person {
 
-    constructor(firstname: string, lastname: string){
-        this.firstname = firstname;
-        this.lastname = lastname;
+    constructor(){
+        super();
     }
 }

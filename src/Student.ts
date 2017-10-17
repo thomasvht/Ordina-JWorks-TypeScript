@@ -1,9 +1,5 @@
-class Student {
-    firstname: string;
-    lastname: string;
-
-    constructor(firstname: string, lastname: string){
-        this.firstname = firstname;
-        this.lastname = lastname;
+class Student extends Person {
+    constructor() {
+        super();
     }
 }
