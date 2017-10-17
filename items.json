@@ -6,6 +6,13 @@
       "description": "Srsly comedy?",
       "age": 16,
       "name":"PG"
+    },
+    {
+      "title": "Death race 2050",
+      "genre": "political satire action direct-to-video",
+      "description": "The year is 2050. In the United Corporations of America, which is plagued by overpopulation and an unemployment rate of 99.993%, the Death Race provides both entertainment and population control. Spanning from Old New York to New Los Angeles, the current Death Race features reigning champion Frankenstein, genetically engineered athlete Jed Perfectus, hip hop sensation Minerva Jefferson, female cultist Tammy the Terrorist and the self-driving car ABE. Each driver is assigned a proxy, a broadcaster who allows the audience to experience the race through virtual reality. Frankenstein is immediately put off by his proxy Annie Sullivan and ignores her attempts to interview him and her suggestions to let his opponents pass him.",
+      "age": "18",
+      "name": "PG-18"
     }
   ],
 

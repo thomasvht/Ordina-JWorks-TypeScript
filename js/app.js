@@ -1,11 +1,11 @@
-function publishItems(title, genre, description) {
-    var article = document.createElement("article");
-    article.innerHTML =
-        "<h3>" + title + "</h3>" +
-            "<p>" + genre + "</p>" +
-            "<span>" + description + "</span>";
-    document.getElementById("items").appendChild(article);
-}
-publishItems("Matrix", "Thriller", "Did you know, Neo is the one?");
-publishItems("Moby Dick", "Drama", "Is this fish for real?");
+//
+// let jsonParser = new JSONParser();
+//
+// jsonParser.getJSON("items.json", data => {
+//     let library:Library = Library.fromJSON(data);
+//
+//     let itemContainer: HTMLElement = document.getElementById("items");
+//     library.getAll().forEach(item => item.render(itemContainer));
+//
+// }); 
 //# sourceMappingURL=app.js.map
