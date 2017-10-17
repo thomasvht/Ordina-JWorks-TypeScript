@@ -1,27 +1,18 @@
 class Book extends Item {
-    render(element: HTMLElement): void {
-        element.innerHTML = `
-        <article>
-        <span>${this.title}</span>
-        <span>${this.genre}</span>
-        <span>${this.description}</span>
-        <span>${this.author}</span>
-        </article>
-`;
+
+    author:Author;
+    constructor(title:string,author:Author,genre:string,description:string){
+        super(title,genre,description)
+        this.author = author;
     }
+    render(element: HTMLElement):void {
+        let article: HTMLElement = document.createElement("article");
+        article.innerHTML =
+            "<h3>" + this.title + "</h3>" +
+            "<h4>" + this.author.name + "</h4>" +
+            "<p>" + this.genre + "</p>" +
+            "<span>" + this.description + "</span>";
 
-    private _author: Author;
-
-
-    constructor() {
-        super();
-    }
-
-    get author(): Author {
-        return this._author;
-    }
-
-    set author(value: Author) {
-        this._author = value;
+        element.appendChild(article);
     }
 }
