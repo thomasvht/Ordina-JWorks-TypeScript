@@ -2,7 +2,8 @@ class Course {
     name: string;
     teacher: Teacher;
 
-    constructor() {
-        
+    constructor(name: string, teacher: Teacher) {
+        this.name = name;
+        this.teacher = teacher;
     }
 }
