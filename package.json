@@ -1,0 +1,25 @@
+{
+  "name": "typescript-exercices",
+  "version": "0.0.1",
+  "description": "First exercice of the typescript course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasvht/Ordina-JWorks-TypeScript.git"
+  },
+  "keywords": [
+    "typescript",
+    "TVH",
+    "Ordina",
+    "JWorks"
+  ],
+  "author": "Thomas Vanhoutte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasvht/Ordina-JWorks-TypeScript/issues"
+  },
+  "homepage": "https://github.com/thomasvht/Ordina-JWorks-TypeScript#readme"
+}
