@@ -1,6 +1,14 @@
 class Movie extends Item implements Rating{
     render(element: HTMLElement): void {
-        throw new Error("Method not implemented.");
+        element.innerHTML = `
+        <article>
+        <span>${this.title}</span>
+        <span>${this.genre}</span>
+        <span>${this.description}</span>
+        <span>${this.name}</span>
+        <span>${this.age}</span>
+        </article>
+`;
     }
 
     private _age: number;

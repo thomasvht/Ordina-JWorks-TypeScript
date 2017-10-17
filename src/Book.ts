@@ -1,6 +1,13 @@
 class Book extends Item {
     render(element: HTMLElement): void {
-        throw new Error("Method not implemented.");
+        element.innerHTML = `
+        <article>
+        <span>${this.title}</span>
+        <span>${this.genre}</span>
+        <span>${this.description}</span>
+        <span>${this.author}</span>
+        </article>
+`;
     }
 
     private _author: Author;
