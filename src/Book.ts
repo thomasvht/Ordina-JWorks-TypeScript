@@ -2,7 +2,7 @@ class Book extends Item {
 
     author:Author;
     constructor(title:string,author:Author,genre:string,description:string){
-        super(title,genre,description)
+        super(title,genre,description);
         this.author = author;
     }
     render(element: HTMLElement):void {
