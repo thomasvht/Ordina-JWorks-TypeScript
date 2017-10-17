@@ -15,46 +15,120 @@
 
     <div id="Students" class="tabcontent">
         <h3>Students</h3>
-        <div>
-        <p>List of students</p>
-        <table>
-            <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>Thomas</td>
-                <td>Vanhoutte</td>
-                <td>24</td>
-            </tr>
-        </table>
-        </div>
-        <div>
-            <p>Add new student: </p>
-            <form>
-                <label>Firstname</label>
-                <input type="text" />
-                <label>Lastname</label>
-                <input type="text" />
-                <label>Age</label>
-                <input type="number" />
-                <button class="btn">Add</button>
-            </form>
+        <div class="parent">
+            <div class="pull-left">
+                <p>List of students</p>
+                <table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Thomas</td>
+                        <td>Vanhoutte</td>
+                        <td>24</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pull-right">
+                <p>Add new student: </p>
+                <form>
+                    <div>
+                        <label>Firstname</label>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <label>Lastname</label>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <label class="paddingAge">Age</label>
+                        <input type="number"/>
+                    </div>
+                    <div>
+                        <button class="btn">Add</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
     <div id="Teachers" class="tabcontent">
         <h3>Teachers</h3>
-        <p>List of teachers</p>
-        <table></table>
+        <div class="parent">
+            <div class="pull-left">
+                <p>List of teachers</p>
+                <table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Courses</th>
+                    </tr>
+                    <tr>
+                        <td>Thomas</td>
+                        <td>Vanhoutte</td>
+                        <td>List of courses</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pull-right">
+                <p>Add new teacher: </p>
+                <form>
+                    <div>
+                        <label>Firstname</label>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <label>Lastname</label>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <label class="paddingAge">Age</label>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <button class="btn">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div id="Courses" class="tabcontent">
         <h3>Courses</h3>
-        <p>List of courses</p>
+        <div class="parent">
+            <div class="pull-left">
+                <p>List of Courses</p>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Teacher</th>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>Kwinten Pisman</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pull-right">
+                <p>Add new course: </p>
+                <form>
+                    <div>
+                        <label>Title</label>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <label>Teacher</label>
+                        <input type="text"/>
+                    </div>
+                    <div>
+                        <button class="btn">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
 <script>
     function openCity(evt, type) {
         // Declare all variables
